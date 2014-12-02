@@ -28,5 +28,58 @@
 * Learning is not about memorizing data and being able to recall it, but its
     generalizing conclusions to previously unseen examples or extracting
     previously unseen patterns
+* Memorizing != Learning
 
+### Supervised Learning
 
+* Predictive learning
+* if response variable = categorical: *classification*
+* if response variable = continuous: *regression* 
+
+### Unsupervised Learning
+- Descriptive learning (knowledge discovery)
+  * clustering
+  * dimensionality reduction
+  * lower-dimension embedding
+    * non-linear
+
+### Supervised Learning
+
+#### Pipeline
+
+* training: input - (extract) features - algorithm
+* predicition: (extract) features - classifier - label
+
+    - Training: model learning
+    - Prediction: model application
+      * Train set / test set
+
+#### Machine learning & Dogma
+
+* The 'central dogma' of statistics
+  * That inference from population sampling is valid
+* your inference is as good as your sample
+
+### Polynomial fitting
+
+* Remember not to overfit !
+* Small in-sample error, but generalizes well to general error.
+* Training error = in-sample error
+* Model complexity: if it fits too well... uh oh.
+  * Out of sample error is minimal
+* You must prevent lickage:
+  * You need to make sure that your algorithm NEVER sees the other data
+
+### Classification Problems
+- split dataset
+  * 85% training, 15% test
+- generalization error
+- OOS error (out of sync error)
+
+### Validation
+* training / test
+* training / test / validation
+* **beware of overtraining on validation**
+* k-fold cross-validation
+  * splitting up that data into multiple packets
+  * generally 5 or 10 folds (unless you're Fermin Moscoso)
