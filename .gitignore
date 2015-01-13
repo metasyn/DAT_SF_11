@@ -2,3 +2,5 @@
 *.pyc
 *Copy0.ipynb
 .ipynb_checkpoints
+*.pkl
+*.npy
